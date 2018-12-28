@@ -1,0 +1,68 @@
+.home_section2_case {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 28%;
+    background: rgb(255, 255, 255);
+    // border: 2px solid grey;
+    box-shadow: 0 0 15px grey;
+    margin-bottom: 40px;
+    .home_section2_case_top {
+      height: 45%;
+      // background: #ffbe33 url("/images/project1.jpg") no-repeat 0 0;
+      background-size: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .9;
+      }
+    }
+    .home_section2_case_bottom {
+      margin: 0 auto;
+      width: 80%;
+      // background: rgb(233, 164, 164);
+      height: 55%;
+      display: flex;
+      flex-direction: column;
+      a {
+        color: rgb(65, 65, 65);
+        h5 {
+          text-align: center;
+          font-size: 1.3rem;
+          padding: 0;
+          margin: 2vh 0 0 0;
+        }
+      }
+      span {
+        color: rgb(39, 39, 39);
+      }
+      .line {
+        border-bottom: 1px solid rgb(202, 202, 202);
+        margin: 2vh 0;
+      }
+      .home_section2_case_bottom_btnctn {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin: 2vh 0px;
+        flex-grow: 1;
+        // background: #000;
+        .btnctn_btn {
+          text-align: center;
+          color: white;
+          text-shadow: 0 0 1px rgb(131, 131, 131);
+          height: 33px;
+          width: 50%;
+          // padding: 3px 5px;
+          border-radius: 3px;
+          background: rgb(87, 160, 120);
+          text-decoration: none;
+          line-height: 33px;
+          &:hover {
+            background: rgb(28, 143, 137);
+          }
+        }
+      }
+    }
+}

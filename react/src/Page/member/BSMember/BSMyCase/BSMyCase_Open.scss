@@ -1,0 +1,221 @@
+@import '../../../../App.scss';
+
+.NoneCaseOpen{
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.imco_card{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px 25px;
+    // background: #e7e7e7;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgb(221, 221, 221);
+    position: relative;
+    .imco_card_left{
+        width: 48%;
+        // background: #000;
+        h6{
+            width: 100%;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    }   
+    .imco_card_right{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // background: rgb(248, 67, 67);
+        // p {
+        //     text-align: right;
+        // }
+        .imco_card_right_btn_container {
+            display: flex;
+            width: 100%;
+            .case_open_button {
+                padding: 2px 10px;
+                border: 1px solid rgb(214, 214, 214);
+                // background: rgb(255, 217, 114);
+                background: rgb(226, 226, 226);
+                border-radius: 3px;
+                font-weight: bold;
+                margin: 5px 10px 0 0;
+                cursor: pointer;
+            }
+            .case_open_button:nth-child(3) {
+                margin: 5px 0px 0 0;
+            }
+            .case_open_button:nth-child(1) {
+                width: 87px;
+            }
+            a {
+                display: block;
+                width: 60px;
+                // height: 34.91px;
+                // line-height: 34.91px;
+                text-align: center;
+                padding: 0;
+                color: black;
+            }
+        }
+    }
+    .imco_card_IC{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: .5s;
+        background-color: #f3f3f3;
+        box-shadow: 0 0 15px #c7c7c7;
+        .imco_card_IC_container{
+            padding: 30px;
+            margin-bottom: 10px;
+            display: flex;
+            .imco_card_IC_content{
+                width: 100%;
+                padding: 10px 0;
+                display: flex;
+                // background: #000;
+                align-items: center; 
+                .imco_card_IC_img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .introduction{
+                    
+                    margin-left: 10%;
+                    width: calc(100% - 10% - 100px);
+                    word-wrap:break-word;
+                   
+                }
+            }
+        }
+        .btn_div{
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            align-self: flex-end;
+            .openChat_btn{
+                border: 1px solid #d6d6d6;
+                background: white;
+                border-radius: 3px;
+                font-weight: bold;
+                padding: 2px 0;
+                color: black;
+                width: 100px;
+                text-align: center;
+            }
+            .btn:hover{
+                background-color: rgb(94, 247, 214);
+            }
+        }
+        @media(max-width:400px){
+            .imco_card_IC_container{
+                padding: 0;
+                .imco_card_IC_content{
+                    flex-direction: column;
+                    align-items: center;
+                    .introduction{
+                        margin: auto;
+                        width: 80%;
+                        word-wrap:break-word;
+                    }
+                }
+            }
+            .btn_div{
+                justify-content: center;
+            }
+        }
+    }
+    .show{
+        margin-top: 30px;
+        max-height: 5000px ;
+        
+    }
+}
+
+
+.register_container{
+    width: 600px;
+    margin: 0 auto;
+    form{
+        padding: 5px;
+    }
+}
+
+.register_btn{
+    font-size: 1.6rem;
+    background-color: rgb(78, 143, 173);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    transition:0.5s;
+    &:hover{
+        background-color: rgb(147, 221, 231);
+        text-decoration:none;
+         }
+    }
+
+
+.btn{
+    background-color: rgb(113, 174, 192);
+    // width: 30%;
+    transition: 0.5s;
+    margin: 3px;
+    &:hover{
+        background-color: rgb(147, 221, 231);
+        text-decoration:none;
+        border-radius: 3px;
+    }
+    a {
+        text-decoration:none;
+    }
+}
+@media (max-width:630px) {
+    .imco_card {
+        flex-direction: column;
+        .imco_card_left {
+            width: 100%;
+        }
+        .imco_card_right {
+            width: 100%;
+            .imco_card_right_btn_container {
+                margin-top: 20px;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .imco_card_IC{
+        .imco_card_IC_container{
+            padding: 20px 30px;
+            flex-direction: column;
+            .imco_card_IC_content{
+                .imco_card_IC_img{
+                    img{
+                    }
+                }
+                .introduction{
+                }
+            }
+            .btn_div {
+                margin-top: 20px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+}

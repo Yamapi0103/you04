@@ -1,0 +1,263 @@
+@import '../../../Component/Navbar.scss';
+
+$padding_left:2%;
+@mixin Width($width:85%) {
+    width: $width;
+    margin: auto;
+    padding: 70px 0;
+}
+
+// 按鈕統一css
+.checkout_btn {
+    padding: 5px 30px;
+    border-radius: 2px;
+    // border: 1px solid rgb(255, 255, 255);
+    border: none;
+    box-shadow: 1px 1px 1px rgb(146, 146, 146);
+    background: $main_color;
+    color: white;
+    transition: .5s;
+    margin-right: 20px;
+    &:hover {
+        background: rgb(75, 190, 133);
+        color: white;
+        // border: 1px solid black;
+    }
+}
+
+// ------------
+.title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.white_section{
+    height: 50px;
+    background-color: #fff;
+}
+// ------------
+.plan_buy_container {
+    margin: 120px 0 50px 0;
+    .plan_buy_content{
+        width: 80%;
+        margin: auto;
+        background-color: rgb(247, 247, 247);
+        .choose{
+            @include Width;
+            // .title{
+            //     font-size: 2rem;
+            //     font-weight: 900;
+            // }
+            .line{
+                width: 100%;
+                margin: auto;
+                height: 1px;
+                border-bottom: 1px solid rgb(184, 184, 184);
+                margin: 15px 0 25px 0;
+            }
+            .choose_plan{
+                display: flex;
+                justify-content: space-between;
+                .plan_buy_box{
+                    border: 1px solid rgb(231, 231, 231);
+                    width: 290px;
+                    text-align: center;
+                    border: none;
+                    // margin-bottom: 30px;
+                    .pbb_plan_ctn {
+                        padding: 20px 0;
+                        background: #f5c320;
+                        color: white;
+                        span {
+                            color: white;
+                            strong {
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                    .pbb_content_ctn {
+                        padding: 10px 20px;
+                        background: rgb(255, 255, 255);
+                        .description {
+                            color: rgb(71, 71, 71);
+                            text-align: justify;
+                        }
+                        .info {
+                            // border-top: 1px solid rgb(224, 224, 224);
+                            // border-bottom: 1px solid rgb(224, 224, 224);
+                            padding: 10px 0;
+                            margin: 10px 0;
+                            .number{
+                                font-size: 1rem;
+                                padding: 1px 0;
+                                font-weight: bold;
+                                border-bottom: 1px solid rgb(224, 224, 224);
+                                span {
+                                    color: rgb(148, 148, 148);
+                                }
+                            }
+                            .number:nth-child(3) {
+                                border: none;
+                            }
+                            .text{
+                                font-size: 1rem;
+                                text-align: left;
+                                color: grey;
+                            }
+                        }
+                    }
+                    .plan_buy_btn{
+                        display: block;
+                        width:130px;
+                        margin: auto;
+                        margin-bottom: 20px;
+                        padding: 10px 3%;
+                        text-decoration: none;
+                        border: 1px solid #353535;
+                        background: #353535;
+                        color: white;
+                        &:hover {
+                            background: white;
+                            color: #353535;
+                        }
+                    }
+                }
+                .final_check{
+                    width:70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin-left: 50px;
+                    .final_check_title_div{
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        .final_check_change{
+                            color: black;
+                            text-decoration: none;
+                        }
+                        .final_check_change:hover{
+                            color:red;
+                        }
+                    }
+                    .final_check_content_div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
+                        margin-top: 30px;
+                        .final_check_content{
+                            word-break: break-all;
+                            line-height: 2rem;
+                        }
+                        .final_check_money{
+                            font-size: 2rem;
+                            font-weight: 700;
+                            text-align: right;
+                            border: none;
+                            margin-bottom: 0px;
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            @media (max-width:860px){
+                .choose_plan{
+                    flex-direction: column;
+                    .plan_buy_box{
+                        width: 50%;
+                        margin: 0 auto 50px auto;
+                    }
+                    .final_check{
+                        width: 100%; 
+                    }
+                }
+            }  
+        }
+        .ATM{
+            @include Width(80%);
+            // margin-top: 50px;
+            .form{
+                .form_content{
+                    margin-bottom: 20px;
+                }
+                .p_input_radio{
+                    margin-bottom: 20px;
+                }
+                .nameEmail{
+                    display: flex;
+                    margin-bottom: 30px;
+                    flex-wrap: wrap;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 5%;
+                        label{
+                            margin-bottom: 10px;
+                        }
+                        .enter{}
+                    }
+                }
+                .ul{
+                    li:first-child>p {
+                        // margin-left: 12.8px;
+                        margin-bottom: 10px;
+                    }
+                    li {
+                        ul {
+                            margin-left: 40px;
+                            li {
+                                margin-bottom: 20px;
+                            }
+                            .nature_form {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                // margin-bottom: 10px;
+                                p {
+                                    display: block;
+                                    width: 130px;
+                                    text-align: left;
+                                    margin-bottom: 0px;
+                                }
+                                .form-control {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .form_bottom{
+                    width: 300px;
+                    margin-left: auto;
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        font-size: 1.2rem;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        span{
+                            font-size: 2rem;
+                            font-weight: 700;
+                        }
+                    }
+                    button{
+                        width: 180px;
+                        align-self: flex-end;
+                    }
+                }
+                @media (max-width:550px){
+                    .form_bottom{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:550px){
+        .plan_buy_content{
+            width: 100%;
+        }
+    }
+}

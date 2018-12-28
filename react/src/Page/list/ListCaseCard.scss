@@ -1,0 +1,134 @@
+.list_case_card_container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 190px;
+    // background: rgb(235, 232, 93);
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    display: flex;
+    margin-top: -1px;
+    .list_case_card_container_left {
+        margin: 15px;
+        width: 60%;
+        height: calc(100% - 30px);
+        background: #ffbe33 url("/images/armani.jpg") no-repeat 0 0;
+        background-size: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .list_case_card_container_right {
+        margin: 15px 5px 15px 15px;
+        width: 100%;
+        // background: rgb(187, 187, 187);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .text_container {
+            width: 75%;
+            // background: yellow;
+            // height: 100%;
+            display: flex;
+            flex-direction: column;
+            a {
+                color: rgb(39, 39, 39);
+                h5 {
+                    // text-align: center;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    padding: 0;
+                    // margin: 15px 0 0 0;
+                }
+            }
+            span {
+                color: rgb(39, 39, 39)!important;
+            }
+            .line {
+            border-bottom: 1.5px solid rgb(210, 210, 210);
+            border-radius: 30%;
+            margin: 10px 0;
+            }
+        }
+        .button_container {
+            width: 24%;
+            // background: powderblue;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .list_case_ctn_apply {
+                background: rgb(87, 189, 133);
+                border: 1.5px solid rgb(87, 189, 133);
+                text-decoration: none;
+                padding: 2px 24px;
+                border-radius: 2px;
+                color: #fff;
+                cursor: pointer;
+                &:hover {
+                    background: rgb(68, 150, 105);
+                    border: 1.5px solid rgb(68, 150, 105);
+                }
+            }
+            .list_case_ctn_save{
+                background: rgb(218, 179, 71);
+                border: 1.5px solid rgb(218, 179, 71);
+                text-decoration: none;
+                padding: 2px 24px;
+                border-radius: 2px;
+                color: #fff;
+                cursor: pointer;
+                &:hover {
+                    background: #fca431;
+                    border: 1.5px solid #fca431;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .list_case_card_container {
+        .list_case_card_container_right {
+            // .text_container {
+
+            // }
+            .button_container {
+                .list_case_ctn_apply {
+                    padding: 2px 7px;
+                }
+                .list_case_ctn_save {
+                    padding: 2px 7px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 680px) {
+    .list_case_card_container {
+        height: 203px;
+        .list_case_card_container_left {
+            width: 55%;
+            margin: 15px 5px;
+        }
+        .list_case_card_container_right {
+            margin: 15px 5px 15px 10px;
+            .text_container {
+                margin-right: 15px;
+                a {
+                    h5 {
+                        // font-size: 1rem;
+                    }
+                }
+                span {
+                    // font-size: 0.9rem;
+                }
+            }
+            .button_container {
+                align-items: flex-start;
+            }
+        }
+    }
+}
+

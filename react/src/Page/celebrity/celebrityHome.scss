@@ -1,0 +1,28 @@
+h2{
+    text-align: center;
+    color: #7e7e7e;
+    text-shadow: 0.5px 1px 3px rgb(96, 122, 98);
+}
+@media(max-width: 615px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+}
+
+.celebtn {
+    position: relative;
+    font-size: 20px;
+    color: rgb(134, 134, 134);
+    margin: 15px;
+    text-shadow: 0.5px 1px 3px rgba(148, 148, 148, 0);
+    &:hover{
+        color:rgb(255, 255, 255);
+        text-shadow: 0.5px 1px 3px rgb(0, 0, 0);
+    }
+}
+.celebtnline {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    margin-top: 3%;
+}

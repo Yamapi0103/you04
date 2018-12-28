@@ -1,0 +1,64 @@
+@import '../../../../App.scss';
+
+.bscase_container {
+    width:95%;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    .register_outside {
+        display: flex;
+        .OpenOrClose {
+            color: #3f3f3f;
+            font-weight: bold;
+            width: 250px;
+            transition: 0.5s;
+            background-color: rgb(243, 243, 243);
+            // border: 1px 1px 0px 1px;
+            // border-style: solid;
+            // border-color: #3f3f3f;
+            margin: 0 20px 0 0;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgb(221, 221, 221);
+            line-height: 45px;
+            height: 48px;
+            text-align: center;
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: transparent;
+        }
+        .OpenOrClose1 {
+            &:hover{
+                border-bottom: 3px;
+                border-style: solid;
+                border-color: #93a57c;
+            }
+        }
+        .OpenOrClose1.active {
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: #93a57c;
+        }
+        .OpenOrClose2 {
+            &:hover{
+                border-bottom: 3px;
+                border-style: solid;
+                border-color: #ff6e6e;
+            }
+            .active {
+                border-bottom: 3px;
+                border-style: solid;
+                border-color: #ff6e6e;
+            }
+        }
+        .OpenOrClose2.active {
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: #ff6e6e;
+        }
+    }
+}
+@media(max-width:950px){
+    .member_form_box_top{
+        width:100%;
+        // margin: 0;
+    }
+}

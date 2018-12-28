@@ -1,0 +1,79 @@
+@import '../../Component/Navbar.scss';
+
+.Total_wrap {
+  margin: 30px 0;
+  .Upper_wrap {
+    padding: 25px;
+    display: flex;
+    figure {
+      // overflow: hidden;
+      // width: 480px;
+      padding: 10px;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        
+        // object-fit: cover;
+      }
+    }
+  }
+  @media screen and (max-width: 980px){
+    .Upper_wrap{
+        flex-direction: column;
+    }
+    img {
+      width: 80%;
+  }
+  }
+}
+
+
+.bsinfo_block{
+width: 500px;
+margin:25px 15px 15px 25px;
+}
+
+.bsinfo_title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .bsinfo_name{
+    font-size: 27px;
+    font-weight: 600;
+  }
+}
+
+.bsinfo_content p{
+  line-height: 30px;
+  font-weight: 600;
+  max-width: 90%;
+}
+
+
+span{
+  color: #76797c;
+}
+
+hr{
+  width:90%;
+}
+
+
+.bsinfo_back{
+  margin-top: 25px;
+}
+
+.bsinfo_back_btn {
+  background: rgb(125, 185, 153);
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 18px;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+      color: #fff;
+      background: rgb(81, 170, 123);
+  }
+}

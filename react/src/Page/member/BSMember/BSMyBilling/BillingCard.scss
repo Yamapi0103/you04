@@ -1,0 +1,49 @@
+.billing_card_container {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    color: #5F5F5F;
+    background: #ffffff; 
+    padding: 30px 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(221, 221, 221);
+    margin-bottom: 2vh;
+    .billing_card_container_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90px;
+        background: #ffffff;
+    }
+    .billing_card_container_left {
+        // background: #ffffff;
+        width: 60%;
+    }
+    .billing_card_container_right {
+        flex-grow: 1;
+        text-align: right;
+        a {
+            align-self: flex-end;
+            padding: 3px 10px;
+            border: 1px solid #d6d6d6;
+            background: #e2e2e2;
+            border-radius: 3px;
+            font-weight: bold;
+            color: black;            
+        }
+    }
+}
+@media (max-width:550px) {
+    .billing_card_container {
+        padding: 30px 30px;
+        .billing_card_container_box {
+        }
+        .billing_card_container_left {
+            width: 50%;
+        }
+        .billing_card_container_right {
+            a {          
+            }
+        }
+    }
+}

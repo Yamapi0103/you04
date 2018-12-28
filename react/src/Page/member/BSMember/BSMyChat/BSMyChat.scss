@@ -1,0 +1,166 @@
+$bg_color:rgb(255, 255, 255);
+
+.chat{
+    display: flex;
+    justify-content: space-around;
+    .chat_left{
+        width: 40%;
+        height: 600px;
+        overflow: auto;
+        background:$bg_color;
+        .case{
+            padding: 10px 10px;
+            // margin-bottom: 10px;
+            background: #ffff;
+            position: relative;
+            // height: calc( 20% - 10px );
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+            .show_chat {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                // background: #000;
+                z-index: 8;
+            }
+            h6{
+                font-size: 1.2rem;
+                font-weight: bold;
+                line-height: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                .hightlight_CaseName{
+                    color: #a2aa9f;
+                }
+            }
+            @media(max-width:683px){
+                h6 {
+                    font-size: 1.1rem;
+                }
+            }
+            .show_chat_title{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            @media(max-width:500px){
+                .show_chat_title_none{
+                    display: none;
+                }
+            }
+            // .hightlight_name{
+            //     color: #99a19b;
+            // }
+        }
+        .case:hover{
+            background: rgb(245, 255, 241) !important;
+            color: rgb(46, 46, 46);
+            h6 > .hightlight_CaseName{
+                color: #ff8a04;
+            }
+            .hightlight_name{
+                color: rgb(46, 46, 46);
+            }
+        }
+        .choose{
+            background: rgb(245, 255, 241) !important;
+            color: rgb(46, 46, 46);
+            h6 > .hightlight_CaseName{
+                color: #ff8a04;
+            }
+            .hightlight_name{
+                color: rgb(46, 46, 46);
+            }
+        }
+        .LookChat{
+            padding: 3px 10px;
+            background: #e2e2e2;
+            border: 1px solid #d6d6d6;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+    .chat_right{
+        width: 56%;
+        padding: 1%;
+        height: 600px;
+        background:$bg_color;
+        .chatContent{
+            // width:450px;  //暫時先寫死,不然當<p>太長時就會爆版
+            height: 540px;
+            overflow: auto;
+            padding: 0 10px;
+            box-sizing: border-box;
+          
+            .ChatBox_right{
+                margin-bottom: 30px;
+                .self_chat{
+                    width: 80%;
+                    margin-left: auto;
+                }
+                .time{
+                    color:#a0adba;
+                    font-size: 0.8rem;
+                    text-align: right;
+                }
+                .BS_bsChat,.IC_icChat{
+                    width:fit-content;
+                    margin-left: auto;
+                    text-align: right;
+                    padding: 3px 12px;
+                    border-radius: 20px;
+                    background-color: #1d1e1dd6;
+                    // background-color: #4d74f3d6;
+                    color: white;
+                    text-align:justify;
+                    word-break: break-all;
+                }
+             }
+
+             .ChatBox_left{
+               margin-bottom: 30px;
+               .other_chat{
+                    width: 80%;
+                    margin-right: auto;
+                }
+                .time{
+                    color:#a0adba;
+                    font-size: 0.8rem;
+                    text-align: left;
+                }
+                .BS_icChat,.IC_bsChat{
+                    width:fit-content;
+                    text-align: left;
+                    padding: 3px 12px;
+                    border-radius: 20px;
+                    background-color: #7a7a7cd6;
+                    // background-color: #31f041d6;
+                    color: white;
+                    text-align:justify;
+                    word-break: break-all;
+                }
+            }
+        }
+        .inputDiv{
+            display: flex;
+            height: 60px;
+            .text{
+                width: 80%;
+            }
+            .sent{
+                cursor: pointer;
+                color: #ffff;
+                text-align: center;
+                width: 20%;
+                line-height: 60px;
+                background: #778a7f;
+            }
+            .sent:hover{
+                background: #617067;
+            }
+        }
+    }
+}
