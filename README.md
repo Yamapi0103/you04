@@ -51,6 +51,6 @@ Instgram、blog 之網紅，皆能在此曝光，尋求最佳的接案機會。
 
 五、操作說明
 
-1.用mySQL匯入資料庫u04.sql
-2.下載整包express，在根目錄和
+1.專題使用MySQL，匯入u04.sql已建立資料庫
+2.下載整包express後，分別在express/和express/react/底下執行yarn start或npm start即可開啟網站
 
